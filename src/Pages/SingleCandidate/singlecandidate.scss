@@ -1,0 +1,160 @@
+.single {
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: rgb(62, 79, 167);
+    height: calc(100vh - 100px - 50px);
+}
+.single-candidate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 0px 0px 25px 25px;
+}
+.single-candidate > div:first-child {
+    display: flex;
+    width: 500px;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    img {
+        width: 150px;
+    }
+}
+.candidate-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-right: 10px;
+    flex-grow: 1;
+    > div {
+        transition: 0.15s;
+
+        &:hover {
+            transform: scale(1.5);
+            border: 3px solid rgb(62, 79, 167);
+            // animation: popup 0.5s ease-in-out;
+        }
+        @keyframes popup {
+            25% {
+                position: relative;
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            
+        }
+    }
+}
+.candidate-info > div {
+    width: 300px;
+    height: 150px;
+    border-radius: 25px;
+    // border: 1px solid yellowgreen;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+}
+table {
+    border: 3px solid rgb(62, 79, 167);
+    border-radius: 25px;
+    padding: 10px;
+    th {
+        width: 200px;
+        display: flex;
+        justify-content: flex-start;
+        padding: 25px 10px;
+    }
+    tr {
+        padding: 0px 20px;
+        height: 50px;
+        align-items: center;
+        .btn {
+            padding: 15px 0px;
+        }
+    }
+    td {
+        text-align: center;
+        width: 200px;
+        display: flex;
+        justify-content: flex-start;
+        padding: 25px 10px;
+        button {
+            background-color: whitesmoke;
+            border: 3px solid black;
+            padding: 10px;
+            border-radius: 25px;
+            text-transform: uppercase;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: black;
+            border: 3px solid rgb(62, 79, 167);
+            color: white;
+            width: 300px;
+            transform: translateX(-50px);
+            cursor: pointer;
+        }
+    }
+}
+.backTo {
+    padding: 20px 10px;
+    button {
+        background-color: rgb(62, 79, 167);
+        border-radius: 25px;
+        border: none;
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+        transition: 0.25s;
+        &:hover {
+            background-color: white;
+            outline:3px solid black;
+            color: black;
+            font-weight: 700;
+            transform: translateX(10px);
+        }
+    }
+}
+
+.candidate-reports {
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+    p {
+       padding: 10px 20px;
+    }
+}
+
+.single-reports {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header-reports {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reports-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.goback{
+    color: black;
+    text-decoration: none;
+}

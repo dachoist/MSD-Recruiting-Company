@@ -1,0 +1,61 @@
+.section3 {
+    flex-grow: 1;
+    // display: flex;
+    p {
+        color: black;
+    }
+}
+
+.date-phase-status {
+    display: flex;
+    margin: 30px 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    input{
+        width: 200px;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        padding: 10px;
+        margin: 10px 0px;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    select{
+        width: 200px;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px 0px;
+        cursor: pointer;
+    }
+}
+
+.notes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    textarea {
+        border-radius: 25px;
+        padding: 20px;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    align-items: center;
+    button {
+        margin: 0px 20px;
+        background-color: white;
+        color: black;
+        font-weight: 600;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}

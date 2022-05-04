@@ -1,0 +1,41 @@
+.heder {
+    width: 100%;
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.search input{
+    margin-right: 20px;
+}
+.heder-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    p {
+        color: white;
+        font-size: 24px;
+
+    }
+}
+.logout {
+    margin-right: 50px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    border: none;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.logout:hover {
+    background-color: black;
+    outline: 3px solid whitesmoke;
+    color: rgb(62, 79, 167);
+    cursor: pointer;
+    transform: translateX(5px);
+}

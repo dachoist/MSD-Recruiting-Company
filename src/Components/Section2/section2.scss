@@ -1,0 +1,124 @@
+.section2 {
+    flex-grow: 1;
+    .search {
+        width: 100%;
+        padding: 20px;
+        margin: 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        input {
+            border-radius: 25px;
+            padding: 10px;
+        }
+        .single-create {
+            border: 2px solid white;
+            border-radius: 25px;
+            display: flex;
+            justify-content: space-between;
+            background-color: black;
+            height: 50px;
+            .single-card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                transition: color 0.25s;
+                transition: border 0.25s;
+                transition: background-color 0.25s;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                &:hover {
+                    background-color: rgb(62, 79, 167);
+                    border: 3px solid black;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .create-card {
+                padding-left: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                transition: color 0.25s;
+                transition: border 0.25s;
+                transition: background-color 0.25s;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                &:hover {
+                    background-color: rgb(62, 79, 167);
+                    border: 3px solid black;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+    input {
+        border-radius: 25px;
+        padding: 10px;
+    }
+    .companies-cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        padding: 50px;
+        gap: 25px;
+        .section-companies {
+            display: flex;
+            justify-content: center;
+            border-radius: 25px;
+            background-color: whitesmoke;
+            width: 300px;
+            height: 150px;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            transition: outline-offset 0.25s;
+            cursor: pointer;
+            p {
+                font-size: 12px
+            }
+        }
+        .section-companies:hover {
+            outline-offset: -10px;
+            outline: 3px solid black;
+            border-radius: 25px;
+        }
+        .active {
+            background-color: black;
+            color: white;
+        }
+        
+    }
+    .buttons2 {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-bottom: 50px;
+        margin-right: 100px;
+    }
+    button {
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        margin: 0px 20px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
